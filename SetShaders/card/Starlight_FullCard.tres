@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dqou26vutsidk"]
+
+[ext_resource type="Shader" path="res://Shaders/Starlight.gdshader" id="1_4hep6"]
+[ext_resource type="Texture2D" uid="uid://ctn2fgykd5kta" path="res://ExtractedTextures/SecretLayer-Shine.png" id="2_ejy4q"]
+
+[resource]
+shader = ExtResource("1_4hep6")
+shader_parameter/interpolation_intensity = 0.1
+shader_parameter/time_speed = 1.0
+shader_parameter/smoothness = 1.0
+shader_parameter/ahead_shine_value = 1.0
+shader_parameter/hatch_angle = 135.0
+shader_parameter/line_size = 0.001
+shader_parameter/darkness_factor = 1.0
+shader_parameter/offset = 0.0
+shader_parameter/repetition = Vector2(1.5, 2)
+shader_parameter/shine_texture = ExtResource("2_ejy4q")

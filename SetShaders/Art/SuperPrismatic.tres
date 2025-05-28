@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://d3dx8p8wlc7o8"]
+
+[ext_resource type="Shader" path="res://super_prisma.gdshader" id="1_yypn5"]
+
+[resource]
+shader = ExtResource("1_yypn5")
+shader_parameter/time_speed = 0.5
+shader_parameter/breadth = 0.1

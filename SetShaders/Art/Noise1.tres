@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://boc5mf5dqvtln"]
+
+[ext_resource type="Shader" path="res://Shaders/Noise1_Art.gdshader" id="1_c5rty"]
+
+[resource]
+shader = ExtResource("1_c5rty")
+shader_parameter/strength = 0.01
+shader_parameter/hyperstrength = 1.5
+shader_parameter/time_mult = 1.0
+shader_parameter/r_displacement = Vector2(0, -1)
+shader_parameter/g_displacement = Vector2(0, 1)
+shader_parameter/b_displacement = Vector2(0, 0)

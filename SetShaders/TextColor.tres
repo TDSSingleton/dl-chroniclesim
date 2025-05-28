@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://xtvnwnhdsoen"]
+
+[ext_resource type="Shader" path="res://Shaders/Custom_NameShader.gdshader" id="1_616ql"]
+
+[resource]
+shader = ExtResource("1_616ql")
+shader_parameter/colorA = Color(0, 0, 0, 1)
+shader_parameter/colorB = Color(0, 0, 0, 1)
+shader_parameter/beam_width = -0.02
+shader_parameter/beam_pos = 0.05

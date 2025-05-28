@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c1rjt7il6ii4s"]
+
+[ext_resource type="Shader" path="res://Shaders/Embossed.gdshader" id="1_6gl4l"]
+
+[resource]
+shader = ExtResource("1_6gl4l")
+shader_parameter/fContrast = 3.0
+shader_parameter/color_blend = Color(0.658824, 0.658824, 0.784314, 1)
+shader_parameter/interpolation_intensity = 0.5

@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dkh603el8kdec"
+path="res://.godot/imported/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf-3e7637fc9133a2e0b63a03d3f82d75a4.fontdata"
+
+[deps]
+
+source_file="res://Fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf"
+dest_files=["res://.godot/imported/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf-3e7637fc9133a2e0b63a03d3f82d75a4.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

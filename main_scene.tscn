@@ -1,0 +1,426 @@
+[gd_scene load_steps=55 format=3 uid="uid://y6y08xewba16"]
+
+[ext_resource type="Script" path="res://Scripts/SceneManager.cs" id="1_d1aln"]
+[ext_resource type="Material" uid="uid://d3iusdcmb4p6y" path="res://SetShaders/Art/Aurora_Shader.tres" id="2_ek3pr"]
+[ext_resource type="FontFile" uid="uid://diop1djdxrab4" path="res://Fonts/Yu-Gi-Oh! Matrix Regular Small Caps 1.ttf" id="2_pcxb8"]
+[ext_resource type="Texture2D" uid="uid://c7pe40pyi7aoo" path="res://CardTemplates/card_frame07.png" id="2_q3hqy"]
+[ext_resource type="Material" uid="uid://dcslaqtdkcrbh" path="res://SetShaders/Rims/DarkMetalRim.tres" id="3_3y5h6"]
+[ext_resource type="Material" uid="uid://cauq4sm6tsd8d" path="res://SetShaders/Art/RGBurn.tres" id="3_tie41"]
+[ext_resource type="Material" uid="uid://boc5mf5dqvtln" path="res://SetShaders/Art/Noise1.tres" id="4_be3dn"]
+[ext_resource type="Material" uid="uid://cu4hhhu18afpb" path="res://SetShaders/Rims/Gold.tres" id="5_152eo"]
+[ext_resource type="Material" uid="uid://xtvnwnhdsoen" path="res://SetShaders/TextColor.tres" id="5_pnnlx"]
+[ext_resource type="Texture2D" uid="uid://d1mkwsdgsbwdw" path="res://Images/WhiteCircle.png" id="6_1yipa"]
+[ext_resource type="Material" uid="uid://beyiu0pve76fr" path="res://SetShaders/Rims/SandyGold.tres" id="6_cyibw"]
+[ext_resource type="Script" path="res://Scripts/AnimatedGlow.cs" id="7_81dvk"]
+[ext_resource type="Material" uid="uid://c15evo5xaoluq" path="res://SetShaders/Rims/SilverRim.tres" id="9_4em3e"]
+[ext_resource type="FontFile" uid="uid://cb5afshi3ypoi" path="res://Fonts/Yu-Gi-Oh! Matrix Book.ttf" id="9_85ku0"]
+[ext_resource type="Material" uid="uid://c1rjt7il6ii4s" path="res://SetShaders/Art/DryEmboss.tres" id="9_l452k"]
+[ext_resource type="Script" path="res://Scripts/TextColorOptionButton.cs" id="10_bgd6l"]
+[ext_resource type="Texture2D" uid="uid://b8s5aa40tbad7" path="res://CardTemplates/ColorRim.png" id="10_qykhw"]
+[ext_resource type="Material" uid="uid://birixa3o1dyee" path="res://SetShaders/Art/Starlight.tres" id="11_o7qn7"]
+[ext_resource type="Script" path="res://Scripts/FoilTypeSelection.cs" id="11_wjtl0"]
+[ext_resource type="Material" uid="uid://jf8v51exn3km" path="res://SetShaders/Art/Sepia 1.tres" id="12_a06tp"]
+[ext_resource type="Material" uid="uid://c2x38fbuuo4bs" path="res://SetShaders/Art/Sepia 3.tres" id="12_bmaye"]
+[ext_resource type="Material" uid="uid://ckg2nybdfe77h" path="res://SetShaders/Art/Sepia 2.tres" id="12_k3sui"]
+[ext_resource type="Material" uid="uid://bxkywaokhcv2t" path="res://SetShaders/Rims/SameAsBlue.tres" id="14_fi1q2"]
+[ext_resource type="Material" uid="uid://duj60jv0e45rc" path="res://SetShaders/Rims/DuelLinks_RainbowRim.tres" id="15_fc2yo"]
+[ext_resource type="Texture2D" uid="uid://cc1us4vy7qf1g" path="res://CardTemplates/card_frame00_#4979.png" id="16_dep8f"]
+[ext_resource type="Texture2D" uid="uid://ceewmjprj5pab" path="res://CardTemplates/card_frame01_#4750.png" id="16_gifak"]
+[ext_resource type="Texture2D" uid="uid://b6fh4wss3c3n1" path="res://CardTemplates/card_frame02_#5073.png" id="17_qdgle"]
+[ext_resource type="Texture2D" uid="uid://nd816yk0ng3c" path="res://CardTemplates/card_frame03.png" id="18_1us5i"]
+[ext_resource type="Material" uid="uid://f3qlfwvymw2v" path="res://SetShaders/Rims/Platinum.tres" id="19_qqj5t"]
+[ext_resource type="Texture2D" uid="uid://cqq17d1pjyo8n" path="res://CardTemplates/card_frame08.png" id="20_hweos"]
+[ext_resource type="Texture2D" uid="uid://b8y0ps2kbqi84" path="res://CardTemplates/card_frame10.png" id="21_0l8cw"]
+[ext_resource type="Texture2D" uid="uid://dvs2eib3o1w2v" path="res://CardTemplates/card_frame12_#4846.png" id="22_j8txs"]
+[ext_resource type="Texture2D" uid="uid://drnflq0t7bpw1" path="res://CardTemplates/card_frame18_#4984.png" id="23_xf8iq"]
+[ext_resource type="Theme" uid="uid://defcblpqun38j" path="res://Theme/YugiohTheme.tres" id="25_178td"]
+[ext_resource type="Material" uid="uid://7xaqr64axmcr" path="res://SetShaders/card/CRT.tres" id="25_ranox"]
+[ext_resource type="Script" path="res://Scripts/RewriteText.cs" id="26_1sbov"]
+[ext_resource type="Material" uid="uid://5vvba278nks" path="res://SetShaders/CustomTextColor.tres" id="27_ataqy"]
+[ext_resource type="Script" path="res://Scripts/LoadImageButton.cs" id="28_08bhj"]
+[ext_resource type="Material" uid="uid://dqou26vutsidk" path="res://SetShaders/card/Starlight_FullCard.tres" id="29_eosu7"]
+[ext_resource type="Script" path="res://Scripts/ImageFileDialog.cs" id="29_y68w0"]
+[ext_resource type="Material" uid="uid://d3dx8p8wlc7o8" path="res://SetShaders/Art/SuperPrismatic.tres" id="30_3x5jj"]
+[ext_resource type="Texture2D" uid="uid://d02ir8slai5x7" path="res://Images/dfcb3v0-b6c3ca35-318e-41b8-b8b8-2b8688e721d7.png" id="30_8eubv"]
+[ext_resource type="Script" path="res://DamagedScript.cs" id="32_4fr1u"]
+[ext_resource type="Shader" path="res://blacktoalpha.gdshader" id="33_4nnk5"]
+[ext_resource type="Texture2D" uid="uid://b5jqrkqssn5g" path="res://ExtractedTextures/DamageLV2.png" id="34_671jx"]
+[ext_resource type="Texture2D" uid="uid://cjof2psdldaqe" path="res://ExtractedTextures/DamageLV1.png" id="34_bqoad"]
+[ext_resource type="Script" path="res://DamagedB.cs" id="35_0nd3g"]
+[ext_resource type="Texture2D" uid="uid://dwuida6mx2vn0" path="res://ExtractedTextures/WinklesMask1.png" id="35_fivlt"]
+[ext_resource type="Texture2D" uid="uid://dhlvdyqwmixiq" path="res://Images/PATREON_SYMBOL_1_WHITE_RGB.png" id="37_y61ve"]
+[ext_resource type="Script" path="res://Scripts/PatreonButton.cs" id="38_n442i"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_26x5h"]
+shader = ExtResource("33_4nnk5")
+shader_parameter/contrast = 2.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_h0xtv"]
+font = ExtResource("2_pcxb8")
+font_size = 48
+shadow_size = 0
+shadow_offset = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_t4yks"]
+font = ExtResource("9_85ku0")
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_3vdjy"]
+font_size = 12
+font_color = Color(0, 0, 0, 0.235294)
+
+[node name="MainScene" type="Node2D" node_paths=PackedStringArray("coloredLabel", "labelTitle", "shine", "rimTexture", "cardArt", "pickers", "cardBack")]
+script = ExtResource("1_d1aln")
+coloredLabel = NodePath("MainUILayer/Card/TextColor")
+labelTitle = NodePath("MainUILayer/TextEdit")
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 0.760784, 0, 1, 1, 0.972549, 0, 1, 0.698039, 0.698039, 0.698039, 1, 1, 1, 1, 1, 0.623529, 0.105882, 0.0862745, 1, 0.882353, 0.0941176, 0.0392157, 1, 0.160784, 0.631373, 0.901961, 1, 0.0156863, 0.976471, 0.917647, 1, 0.792157, 0.180392, 0.886275, 1, 1, 0.447059, 0.996078, 1, 0.262745, 0.796078, 0, 1, 0.533333, 1, 0.188235, 1)
+shine = NodePath("MainUILayer/Card/TextColor/TextureRect")
+shineColors = PackedColorArray(1, 1, 1, 1, 1, 0.972549, 0.313726, 1, 1, 1, 1, 1, 0.990735, 0.217522, 0.151976, 1, 0.0196078, 0.988235, 0.941176, 1, 1, 0.607843, 0.996078, 1, 0.671333, 1, 0.42, 1)
+artMaterials = Array[ShaderMaterial]([null, ExtResource("2_ek3pr"), ExtResource("11_o7qn7"), null, ExtResource("4_be3dn"), ExtResource("4_be3dn"), ExtResource("4_be3dn"), ExtResource("12_a06tp"), ExtResource("12_k3sui"), ExtResource("12_bmaye"), null, null, null, ExtResource("30_3x5jj"), ExtResource("3_tie41"), ExtResource("3_tie41"), ExtResource("9_l452k")])
+rimTexture = NodePath("MainUILayer/Card/Rim")
+rimColors = Array[ShaderMaterial]([null, ExtResource("3_3y5h6"), ExtResource("9_4em3e"), ExtResource("5_152eo"), ExtResource("15_fc2yo"), null, ExtResource("6_cyibw"), ExtResource("19_qqj5t"), ExtResource("14_fi1q2")])
+baseTextSize = 300
+cardArt = NodePath("MainUILayer/Card/Image")
+pickers = [NodePath("MainUILayer/ColorA"), NodePath("MainUILayer/ColorB"), NodePath("MainUILayer/ColorC")]
+cardBacks = Array[CompressedTexture2D]([ExtResource("16_dep8f"), ExtResource("16_gifak"), ExtResource("17_qdgle"), ExtResource("18_1us5i"), ExtResource("2_q3hqy"), ExtResource("20_hweos"), ExtResource("21_0l8cw"), ExtResource("22_j8txs"), ExtResource("23_xf8iq")])
+cardBack = NodePath("MainUILayer/Card")
+cardBackShaders = Array[ShaderMaterial]([ExtResource("25_ranox"), ExtResource("29_eosu7")])
+textShaders = Array[ShaderMaterial]([ExtResource("5_pnnlx"), ExtResource("27_ataqy")])
+
+[node name="MainUILayer" type="CanvasLayer" parent="."]
+
+[node name="Card Shadow" type="TextureRect" parent="MainUILayer"]
+self_modulate = Color(0, 0, 0, 0.427451)
+z_index = -2
+offset_left = 714.0
+offset_top = 27.0
+offset_right = 1133.0
+offset_bottom = 634.0
+texture = ExtResource("2_q3hqy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Card" type="TextureRect" parent="MainUILayer"]
+offset_left = 709.0
+offset_top = 19.0
+offset_right = 1128.0
+offset_bottom = 626.0
+texture = ExtResource("21_0l8cw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Image" type="TextureRect" parent="MainUILayer/Card"]
+z_index = -1
+material = ExtResource("30_3x5jj")
+layout_mode = 0
+offset_left = 53.0
+offset_top = 113.0
+offset_right = 366.0
+offset_bottom = 426.0
+texture = ExtResource("30_8eubv")
+expand_mode = 1
+
+[node name="Rim" type="TextureRect" parent="MainUILayer/Card"]
+visible = false
+material = ExtResource("5_152eo")
+layout_mode = 0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 418.0
+offset_bottom = 609.0
+texture = ExtResource("10_qykhw")
+stretch_mode = 5
+
+[node name="DamagedA" type="TextureRect" parent="MainUILayer/Card"]
+visible = false
+texture_filter = 3
+material = SubResource("ShaderMaterial_26x5h")
+layout_mode = 0
+offset_left = 1.0
+offset_right = 418.0
+offset_bottom = 607.0
+texture = ExtResource("34_671jx")
+expand_mode = 4
+script = ExtResource("32_4fr1u")
+damagedImages = Array[CompressedTexture2D]([ExtResource("34_bqoad"), ExtResource("34_671jx")])
+
+[node name="DamagedB" type="TextureRect" parent="MainUILayer/Card"]
+visible = false
+texture_filter = 3
+material = SubResource("ShaderMaterial_26x5h")
+layout_mode = 0
+offset_left = 2.0
+offset_right = 419.0
+offset_bottom = 607.0
+texture = ExtResource("35_fivlt")
+expand_mode = 4
+script = ExtResource("35_0nd3g")
+
+[node name="TextColor" type="Label" parent="MainUILayer/Card"]
+clip_children = 2
+material = ExtResource("5_pnnlx")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.076
+anchor_top = 0.057
+anchor_right = 0.841
+anchor_bottom = 0.111
+offset_left = 0.156
+offset_top = -4.599
+offset_right = 12.621
+offset_bottom = 10.623
+text = "Shooting Majestic Star Dragon"
+label_settings = SubResource("LabelSettings_h0xtv")
+
+[node name="TextureRect" type="TextureRect" parent="MainUILayer/Card/TextColor"]
+visible = false
+layout_mode = 0
+offset_left = -131.0
+offset_right = -1.0
+offset_bottom = 69.0
+texture = ExtResource("6_1yipa")
+expand_mode = 1
+script = ExtResource("7_81dvk")
+assocPositions = PackedFloat32Array(-134, 650)
+runSpeed = 1.2
+runtimeDelay = 4.0
+
+[node name="TextColor Title" type="Label" parent="MainUILayer"]
+offset_left = 37.0
+offset_top = 37.0
+offset_right = 622.0
+offset_bottom = 70.0
+text = "Text Color:"
+label_settings = SubResource("LabelSettings_t4yks")
+
+[node name="TextColor" type="OptionButton" parent="MainUILayer"]
+offset_left = 72.0
+offset_top = 75.0
+offset_right = 452.0
+offset_bottom = 111.0
+item_count = 8
+selected = 0
+popup/item_0/text = "Base"
+popup/item_0/id = 0
+popup/item_1/text = "Gold"
+popup/item_1/id = 1
+popup/item_2/text = "Silver"
+popup/item_2/id = 2
+popup/item_3/text = "Red"
+popup/item_3/id = 3
+popup/item_4/text = "Blue"
+popup/item_4/id = 4
+popup/item_5/text = "Purple"
+popup/item_5/id = 5
+popup/item_6/text = "Green"
+popup/item_6/id = 6
+popup/item_7/text = "Custom"
+popup/item_7/id = 7
+script = ExtResource("10_bgd6l")
+
+[node name="TextEdit" type="TextEdit" parent="MainUILayer"]
+offset_left = 72.0
+offset_top = 128.0
+offset_right = 624.0
+offset_bottom = 168.0
+theme = ExtResource("25_178td")
+placeholder_text = " Card Title"
+script = ExtResource("26_1sbov")
+
+[node name="Foil Title" type="Label" parent="MainUILayer"]
+offset_left = 37.0
+offset_top = 194.0
+offset_right = 622.0
+offset_bottom = 227.0
+text = "Foil:"
+label_settings = SubResource("LabelSettings_t4yks")
+
+[node name="Foil Type" type="OptionButton" parent="MainUILayer"]
+offset_left = 72.0
+offset_top = 232.0
+offset_right = 626.0
+offset_bottom = 268.0
+item_count = 17
+selected = 0
+popup/item_0/text = "Base"
+popup/item_0/id = 0
+popup/item_1/text = "Aurora"
+popup/item_1/id = 5
+popup/item_2/text = "Starlight"
+popup/item_2/id = 6
+popup/item_3/text = "Full Starlight"
+popup/item_3/id = 3
+popup/item_4/text = "Noise 1"
+popup/item_4/id = 4
+popup/item_5/text = "Noise 2"
+popup/item_5/id = 5
+popup/item_6/text = "Noise 3"
+popup/item_6/id = 6
+popup/item_7/text = "Sepia 1"
+popup/item_7/id = 7
+popup/item_8/text = "Sepia 2"
+popup/item_8/id = 8
+popup/item_9/text = "Sepia 3"
+popup/item_9/id = 9
+popup/item_10/text = "Damaged 1"
+popup/item_10/id = 10
+popup/item_11/text = "Damaged 2"
+popup/item_11/id = 11
+popup/item_12/text = "Damaged 3"
+popup/item_12/id = 12
+popup/item_13/text = "Super Prismatic"
+popup/item_13/id = 15
+popup/item_14/text = "Custom Shaders"
+popup/item_14/id = 13
+popup/item_14/disabled = true
+popup/item_14/separator = true
+popup/item_15/text = "RGBurn"
+popup/item_15/id = 14
+popup/item_16/text = "Dry Emboss"
+popup/item_16/id = 16
+script = ExtResource("11_wjtl0")
+
+[node name="Rim Type Title" type="Label" parent="MainUILayer"]
+offset_left = 36.0
+offset_top = 301.0
+offset_right = 621.0
+offset_bottom = 334.0
+text = "Rim Type:"
+label_settings = SubResource("LabelSettings_t4yks")
+
+[node name="Rim Type" type="OptionButton" parent="MainUILayer"]
+offset_left = 71.0
+offset_top = 339.0
+offset_right = 625.0
+offset_bottom = 375.0
+item_count = 9
+selected = 0
+popup/item_0/text = "Base"
+popup/item_0/id = 0
+popup/item_1/text = "Black Metal"
+popup/item_1/id = 1
+popup/item_2/text = "Silver"
+popup/item_2/id = 2
+popup/item_3/text = "Gold"
+popup/item_3/id = 3
+popup/item_4/text = "Rainbow"
+popup/item_4/id = 4
+popup/item_5/text = "Custom Shaders"
+popup/item_5/id = 5
+popup/item_5/disabled = true
+popup/item_5/separator = true
+popup/item_6/text = "Fool's Gold"
+popup/item_6/id = 6
+popup/item_7/text = "Platinum Blue"
+popup/item_7/id = 7
+popup/item_8/text = "Same as Blue Text"
+popup/item_8/id = 8
+
+[node name="Cart Type Title" type="Label" parent="MainUILayer"]
+offset_left = 36.0
+offset_top = 412.0
+offset_right = 621.0
+offset_bottom = 445.0
+text = "Card Type:"
+label_settings = SubResource("LabelSettings_t4yks")
+
+[node name="Card Type" type="OptionButton" parent="MainUILayer"]
+offset_left = 71.0
+offset_top = 450.0
+offset_right = 625.0
+offset_bottom = 486.0
+item_count = 9
+selected = 6
+popup/item_0/text = "Vanilla"
+popup/item_0/id = 0
+popup/item_1/text = "Effect"
+popup/item_1/id = 1
+popup/item_2/text = "Ritual"
+popup/item_2/id = 2
+popup/item_3/text = "Fusion"
+popup/item_3/id = 3
+popup/item_4/text = "Spell"
+popup/item_4/id = 4
+popup/item_5/text = "Trap"
+popup/item_5/id = 8
+popup/item_6/text = "Synchro"
+popup/item_6/id = 5
+popup/item_7/text = "Xyz"
+popup/item_7/id = 6
+popup/item_8/text = "Link"
+popup/item_8/id = 7
+
+[node name="Button" type="Button" parent="MainUILayer" node_paths=PackedStringArray("fileDialog")]
+offset_left = 450.0
+offset_top = 600.0
+offset_right = 625.0
+offset_bottom = 634.0
+text = "Load Image"
+script = ExtResource("28_08bhj")
+fileDialog = NodePath("../FileDialog")
+
+[node name="FileDialog" type="FileDialog" parent="MainUILayer" node_paths=PackedStringArray("imageTexture")]
+title = "Open a File"
+initial_position = 1
+size = Vector2i(1104, 589)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg")
+use_native_dialog = true
+script = ExtResource("29_y68w0")
+imageTexture = NodePath("../Card/Image")
+
+[node name="ColorA" type="ColorPickerButton" parent="MainUILayer"]
+offset_left = 460.0
+offset_top = 75.0
+offset_right = 512.0
+offset_bottom = 112.0
+disabled = true
+
+[node name="ColorB" type="ColorPickerButton" parent="MainUILayer"]
+offset_left = 517.0
+offset_top = 75.0
+offset_right = 569.0
+offset_bottom = 112.0
+disabled = true
+
+[node name="ColorC" type="ColorPickerButton" parent="MainUILayer"]
+offset_left = 574.0
+offset_top = 75.0
+offset_right = 626.0
+offset_bottom = 112.0
+disabled = true
+
+[node name="Label" type="Label" parent="MainUILayer"]
+offset_left = 54.0
+offset_top = 606.0
+offset_right = 394.0
+offset_bottom = 643.0
+text = "Duel Links Chronicle Simulator by Singleton (@eldaryon)
+Contact me on Discord and let me know what you think!"
+label_settings = SubResource("LabelSettings_3vdjy")
+
+[node name="TextureRect" type="TextureRect" parent="MainUILayer"]
+self_modulate = Color(1, 1, 1, 0.235294)
+offset_left = 11.0
+offset_top = 608.0
+offset_right = 45.0
+offset_bottom = 642.0
+texture = ExtResource("37_y61ve")
+expand_mode = 1
+script = ExtResource("38_n442i")
+
+[connection signal="item_selected" from="MainUILayer/TextColor" to="." method="_on_text_color_item_selected"]
+[connection signal="text_changed" from="MainUILayer/TextEdit" to="." method="SetLabelText"]
+[connection signal="item_selected" from="MainUILayer/Foil Type" to="." method="_on_foil_type_item_selected"]
+[connection signal="item_selected" from="MainUILayer/Foil Type" to="MainUILayer/Card/DamagedA" method="OnFoilSwitched"]
+[connection signal="item_selected" from="MainUILayer/Foil Type" to="MainUILayer/Card/DamagedB" method="OnFoilSwitch"]
+[connection signal="item_selected" from="MainUILayer/Rim Type" to="." method="_on_rim_type_item_selected"]
+[connection signal="item_selected" from="MainUILayer/Card Type" to="." method="OnCardBackSelect"]
+[connection signal="pressed" from="MainUILayer/Button" to="MainUILayer/Button" method="OnPressed"]
+[connection signal="file_selected" from="MainUILayer/FileDialog" to="MainUILayer/FileDialog" method="OnFileSelected"]
+[connection signal="color_changed" from="MainUILayer/ColorA" to="." method="OnColorAChanged"]
+[connection signal="color_changed" from="MainUILayer/ColorB" to="." method="OnColorBChanged"]
+[connection signal="color_changed" from="MainUILayer/ColorC" to="." method="OnColorCChanged"]
+[connection signal="gui_input" from="MainUILayer/TextureRect" to="MainUILayer/TextureRect" method="OnIconClick"]

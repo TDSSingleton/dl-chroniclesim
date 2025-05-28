@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://d3iusdcmb4p6y"]
+
+[ext_resource type="Shader" path="res://Shaders/Aurora.gdshader" id="1_dfys1"]
+
+[resource]
+shader = ExtResource("1_dfys1")
+shader_parameter/color_top_left = Color(1, 0, 0, 1)
+shader_parameter/color_top_right = Color(0, 1, 0, 1)
+shader_parameter/color_bottom_left = Color(0, 0, 1, 1)
+shader_parameter/color_bottom_right = Color(1, 1, 0, 1)
+shader_parameter/interpolation_intensity = 0.2
+shader_parameter/luminance_halvingrange = 0.0
+shader_parameter/color_change_speed = 1.5

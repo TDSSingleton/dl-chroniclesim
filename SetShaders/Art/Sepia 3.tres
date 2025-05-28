@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c2x38fbuuo4bs"]
+
+[ext_resource type="Shader" path="res://Shaders/Enhanced_Grayscale.gdshader" id="1_kygux"]
+
+[resource]
+shader = ExtResource("1_kygux")
+shader_parameter/color_blend = Color(0.85098, 0.709804, 0.54902, 1)
+shader_parameter/interpolation_intensity = 1.0
+shader_parameter/contrast = 0.45
+shader_parameter/additional_brightness = 1.75

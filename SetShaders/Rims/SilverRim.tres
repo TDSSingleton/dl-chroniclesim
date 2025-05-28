@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c15evo5xaoluq"]
+
+[ext_resource type="Shader" path="res://Shaders/fogshader.gdshader" id="1_eanbi"]
+
+[resource]
+shader = ExtResource("1_eanbi")
+shader_parameter/colorMode = 0
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/timescale = 0.005
+shader_parameter/hScrollSpeedFactor = 0.0
+shader_parameter/vScrollSpeedFactor = 1.0
+shader_parameter/entropyFactor = 0.1
+shader_parameter/sharpness = 5.0
+shader_parameter/fog_color = null
+shader_parameter/mixing_rate_color = 0.5
+shader_parameter/contrast = 1.2
+shader_parameter/conservation_factor = 0.2
+shader_parameter/smoothness = 1.0
+shader_parameter/color_range_skip = 0.55
