@@ -11,10 +11,14 @@ config_version=5
 [application]
 
 config/name="Duel Links Chronicle Simulator"
-config/version="2"
+config/version="2.2"
 run/main_scene="res://main_scene.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://Images/SAHUR.png"
+
+[display]
+
+window/size/resizable=false
 
 [dotnet]
 
